@@ -8,3 +8,7 @@ numpy==1.24.3
 pandas==2.0.3
 pillow==10.0.1
 ultralytics==8.1.0  # Remove if not using prebuilt YOLO models
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-auth-oauthlib
