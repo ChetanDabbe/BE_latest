@@ -1,0 +1,77 @@
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #111827;
+  flex: 1;
+  min-width: 15rem;
+}
+
+.nav-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.status {
+  font-size: 1rem;
+  color: #374151;
+}
+
+.status.operational {
+  background-color: #d1fae5;
+  color: #047857;
+  font-weight: 500;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 0.95rem;
+}
+
+.emergency-button {
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-button:hover {
+  background-color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .nav-info {
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .emergency-button {
+    width: 100%;
+    text-align: center;
+  }
+}

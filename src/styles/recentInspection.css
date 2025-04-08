@@ -1,0 +1,77 @@
+.recent-inspection-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 40rem;
+    margin: auto;
+  }
+  
+  .recent-title{
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .inspection-list {
+    width: 100%;
+  }
+  
+  .inspection-row {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 2fr;
+    align-items: center;
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    border-bottom: 0.1rem solid #ddd;
+  }
+  
+  .inspection-row:last-child {
+    border-bottom: none;
+  }
+  
+  .dot {
+    font-size: 1.2rem;
+    color: red;
+    text-align: center;
+  }
+  
+  .bottle {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .time {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+  }
+  
+  .defect-text {
+    color: red;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  .no-defect {
+    color: green;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .inspection-row {
+      grid-template-columns: 0.5fr 2fr 1fr;
+      font-size: 0.9rem;
+      grid-gap: 0.5rem;
+    }
+  
+    .defect-text,
+    .no-defect {
+      text-align: left;
+    }
+  }
+  
